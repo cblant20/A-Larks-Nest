@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ALarksNest</title>
+  <title>A Lark's Nest</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+   <link rel="stylesheet" type="text/css" href="app/assets/stylesheets/application.css">
+  <link rel="stylesheet" type="text/css" href="app/vendor/assets/stylesheets/foundation.css">
+  <link rel="stylesheet" type="text/css" href="app/vendor/assets/stylesheets/lightslider.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="app/vendor/assets/javascripts/lightslider.js"></script> 
+  <script src="app/assets/javascripts/application.js"></script> 
 </head>
 <body>
+
+	<div class="demo">
+        <div class="item">            
+            <div class="clearfix" style="max-width:474px;">
+                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
+					<% if @petImages	%>
+						<% puts "***************************************************" %>
+						<% @petImages.each do |image| %>
+							<li><%= image_tag image.gsub("app/assets/images/", "") %></li>
+						<% end %>
+					<% end %>
+                </ul>
+            </div>
+        </div>
 
 <%= yield %>
 
