@@ -8,19 +8,17 @@
 </head>
 <body>
 
-	<div class="demo">
-        <div class="item">            
-            <div class="clearfix" style="max-width:474px;">
-                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-					<% if @petImages	%>
-            i = 0
-						<% @petImages.each do |image| %>
-							<li><%= image_tag image.gsub("app/assets/images/", "") %></li>
-						<% end %>
+	<div class="gallery">           
+    <div class="clearfix" style="max-width:474px;">
+      <ul id="image-gallery" class="cS-hidden">
+				<% if @petImages	%>
+					<% @petImages.each do |image| %>
+						<li><%= image_tag image.gsub("app/assets/images/", "") %></li>
 					<% end %>
-                </ul>
-            </div>
-        </div>
+				<% end %>
+      </ul>
+    </div>
+  </div>
 
 <%= yield %>
 

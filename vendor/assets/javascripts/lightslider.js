@@ -409,7 +409,7 @@
                         return false;
                     });
                 };
-                if (settings.pager) {
+                if (settings.pager && $('.lSPager').length != 1){
                     var cl = 'lSpg';
                     if (settings.gallery) {
                         cl = 'lSGallery';

@@ -155,6 +155,7 @@
     top: 50%;
     height: 32px;
     background-image: url('controls.png');
+    background-repeat: no-repeat;
     cursor: pointer;
     position: absolute;
     z-index: 99;
