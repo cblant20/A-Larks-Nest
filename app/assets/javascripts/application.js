@@ -13,5 +13,6 @@
 //= require jquery
 //= require lightslider
 //= require jquery_ujs
+//= require custom
 //= require turbolinks
 //= require_tree .
