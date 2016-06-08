@@ -13,6 +13,11 @@ ul{
     padding: 70px 0;
 }
 .gallery{
-    width: 800px;
-    margin-bottom: 60px;
+    width: 500px;
+    float: center;
+    padding: 60px;
+}
+.item{
+    max-width: 500px;
+    max-height: 500px;
 }
