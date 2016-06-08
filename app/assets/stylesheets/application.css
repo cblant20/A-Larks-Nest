@@ -10,7 +10,6 @@
  *
  *= require foundation
  *= require lightslider
- *= require custom
  *= require_self
  *= require_tree .
  */
