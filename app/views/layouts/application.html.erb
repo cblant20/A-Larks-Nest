@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<<<<<<< Updated upstream
 	<div class="demo">
         <div class="item">            
             <div class="clearfix" style="max-width:474px;">
@@ -21,6 +22,34 @@
                 </ul>
             </div>
         </div>
+=======
+  <h1 class="columns large-push-2"> A Lark's Nest </h1>
+  <nav class="columns large-push-2">
+    <ul>
+      <li><a href="#"> About </a></li>
+      <li><a href="#"> Rates </a></li>
+      <li><a href="#"> Contact </a></li>
+    </ul>
+  </nav>
+
+	<div class="gallery columns-8 large-centered">        
+    <ul id="image-gallery" class="cS-hidden">
+			<% if @petImages	%>
+				<% @petImages.each do |image| %>
+					<li><%= image_tag image.gsub("app/assets/images/", ""), class: "item" %></li>
+				<% end %>
+			<% end %>
+    </ul>
+  </div>
+>>>>>>> Stashed changes
+
+   <nav class="columns large-push-8">
+    <ul>
+      <li><a href="#"> Portraits </a></li>
+      <li><a href="#"> Pets </a></li>
+      <li><a href="#"> Events </a></li>
+    </ul>
+  </nav> 
 
 <%= yield %>
 
