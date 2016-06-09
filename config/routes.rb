@@ -54,6 +54,6 @@ ALarksNest::Application.routes.draw do
   #     resources :products
   #   end
 
- root 'application#index'
+ root 'index#show'
 
 end

@@ -1,0 +1,9 @@
+<div class="gallery columns-8 large-centered">        
+<ul id="image-gallery" class="cS-hidden">
+		<% if @petImages	%>
+			<% @petImages.each do |image| %>
+				<li><%= image_tag image.gsub("app/assets/images/", ""), class: "item" %></li>
+			<% end %>
+		<% end %>
+</ul>
+</div>
