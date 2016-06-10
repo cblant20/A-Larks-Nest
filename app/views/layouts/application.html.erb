@@ -7,20 +7,16 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-	<div class="demo">
-        <div class="item">            
-            <div class="clearfix" style="max-width:474px;">
-                <ul id="image-gallery" class="gallery list-unstyled cS-hidden">
-					<% if @petImages	%>
-            i = 0
-						<% @petImages.each do |image| %>
-							<li><%= image_tag image.gsub("app/assets/images/", "") %></li>
-						<% end %>
-					<% end %>
-                </ul>
-            </div>
-        </div>
+  <header>
+    <h1> A Lark's Nest</h1>
+    <nav>
+      <ul class="menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Rates</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
 <%= yield %>
 
