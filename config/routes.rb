@@ -56,4 +56,8 @@ ALarksNest::Application.routes.draw do
 
  root 'index#show'
 
+ get '/contact', to: 'contact#show', as: :contact
+ get '/rates', to: 'rates#show', as: :rates
+ get '/about', to: 'about#show', as: :about
+
 end
