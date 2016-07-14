@@ -8,9 +8,12 @@
 </head>
 <body>
   <header>
-    <h1> A Lark's Nest</h1>
-    <nav>
+    <div class="row">
+      <h1> A Lark's Nest</h1>
+    </div>
+    <nav class="row">
       <ul class="menu">
+        <li><a href="<%= index_path %>">Home</a></li> <!-- Bug on home link -->
         <li><a href="<%= about_path %>">About</a></li>
         <li><a href="<%= rates_path %>">Rates</a></li>
         <li><a href="<%= contact_path %>">Contact</a></li>
