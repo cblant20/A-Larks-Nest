@@ -1,28 +1,30 @@
 $(document).ready(function() {
 
     activeGallery = "#portrait-container";
+    $("#pet-container").addClass("cS-hidden");
+    $("#event-container").addClass("cS-hidden");
 
     $("#portraits").click(function (e)
     {
         e.preventDefault();
-        $(activeGallery).hide();
-        $("#portrait-container").show();
+        $(activeGallery).addClass("cS-hidden");
+        $("#portrait-container").removeClass("cS-hidden");
         activeGallery="#portrait-container";
     });
 
     $("#pets").click(function (e)
     {
         e.preventDefault();
-        $(activeGallery).hide();
-        $("#pet-container").show();
+        $(activeGallery).addClass("cS-hidden");
+        $("#pet-container").removeClass("cS-hidden");
         activeGallery="#pet-container";
     });
 
     $("#events").click(function (e)
     {
         e.preventDefault();
-        $(activeGallery).hide();
-        $("#event-container").show();
+        $(activeGallery).addClass("cS-hidden");
+        $("#event-container").removeClass("cS-hidden");
         activeGallery= "#event-container";
     });
 

@@ -1,5 +1,5 @@
 <div class="gallery columns-8 large-centered">
-	<div class="portrait-containter"> 
+	<div id="portrait-container"> 
 		<ul id="portraits-image-gallery" class="cS-hidden">
 			<% if @portraitImages	%>
 				<% @portraitImages.each do |image| %>
@@ -8,7 +8,7 @@
 			<% end %>
 		</ul>
 	</div>
-	<div class="pet-containter hide">        
+	<div id="pet-container">        
 		<ul id="pets-image-gallery" class="cS-hidden">
 				<% if @petImages	%>
 					<% @petImages.each do |image| %>
@@ -17,7 +17,7 @@
 				<% end %>
 		</ul>
 	</div>
-	<div class="event-containter hide"> 
+	<div id="event-container"> 
 		<ul id="events-image-gallery" class="cS-hidden">
 			<% if @eventImages	%>
 				<% @eventImages.each do |event| %>
