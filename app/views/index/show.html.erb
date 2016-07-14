@@ -1,16 +1,36 @@
-<div class="gallery columns-8 large-centered">        
-	<ul id="image-gallery" class="cS-hidden">
-			<% if @petImages	%>
-				<% @petImages.each do |image| %>
+<div class="gallery columns-8 large-centered">
+	<div id="portrait-container"> 
+		<ul id="portraits-image-gallery" class="cS-hidden">
+			<% if @portraitImages	%>
+				<% @portraitImages.each do |image| %>
 					<li><%= image_tag image.gsub("app/assets/images/", ""), class: "item" %></li>
 				<% end %>
 			<% end %>
-	</ul>
+		</ul>
+	</div>
+	<div id="pet-container">        
+		<ul id="pets-image-gallery" class="cS-hidden">
+				<% if @petImages	%>
+					<% @petImages.each do |image| %>
+						<li><%= image_tag image.gsub("app/assets/images/", ""), class: "item" %></li>
+					<% end %>
+				<% end %>
+		</ul>
+	</div>
+	<div id="event-container"> 
+		<ul id="events-image-gallery" class="cS-hidden">
+			<% if @eventImages	%>
+				<% @eventImages.each do |event| %>
+					<li><%= image_tag event.gsub("app/assets/images/", ""), class: "item" %></li>
+				<% end %>
+			<% end %>
+		</ul>
+	</div>
 </div>
-<div>
+<div class="row">
   <ul class="menu">
-    <li><a href="#">Portraits</a></li>
-    <li><a href="#">Pets</a></li>
-    <li><a href="#">Events</a></li>
+    <li><a id="portraits">Portraits&nbsp;/</a></li>
+    <li><a id="pets">&nbsp;Pets&nbsp;/</a></li>
+    <li><a id="events">&nbsp;Events</a></li>
   </ul>
 </div>
