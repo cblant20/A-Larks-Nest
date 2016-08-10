@@ -50,7 +50,6 @@ $(document).ready(function() {
         slideMargin: 0,
         pause: 5000,
         enableDrag: false,
-        auto:true,
         loop:true,
         keyPress:true,
         onSliderLoad: function() {
@@ -65,7 +64,6 @@ $(document).ready(function() {
         slideMargin: 0,
         pause: 5000,
         enableDrag: false,
-        auto:true,
         loop:true,
         keyPress:true,
         onSliderLoad: function() {
