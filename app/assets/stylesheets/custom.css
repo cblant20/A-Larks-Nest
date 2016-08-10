@@ -16,6 +16,9 @@ h1{
     font-family: 'Dawning of a New Day', cursive;
     font-size: 72px;
 }
+.bold{
+    font-weight: bold;
+}
 .bread-crumb{
     font-size: 10px;
 }
