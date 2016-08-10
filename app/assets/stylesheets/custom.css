@@ -14,8 +14,13 @@ ul{
 }
 h1{
     font-family: 'Dawning of a New Day', cursive;
-    font-weight: bold;
     font-size: 72px;
+}
+.bread-crumb{
+    font-size: 10px;
+}
+.centered {
+    text-align: center;
 }
 .content-slider li{
     background-color: #ed3020;
@@ -47,9 +52,7 @@ h1{
     padding: 0;
     text-align: auto;
 }
-.hide{
-    display: none;
-}
 a {
     color: black;
+    font-weight: bold;
 }
