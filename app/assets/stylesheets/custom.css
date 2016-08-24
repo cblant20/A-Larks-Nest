@@ -1,9 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Dawning+of+a+New+Day);
 @import url(https://fonts.googleapis.com/css?family=Josefin+Slab);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
 
 body {
-    background-image: url("branding/paper-background.jpg");
-    background-repeat: repeat;
+    /*background-image: url("branding/paper-background.jpg");
+    background-repeat: repeat;*/
+    font-family: 'Quattrocento', serif;
 }
 
 ul{
@@ -14,7 +16,10 @@ ul{
 }
 h1{
     font-family: 'Dawning of a New Day', cursive;
-    font-size: 72px;
+    font-size: 56px;
+}
+h2, h3, h4, h5 {
+    font-family: 'Quattrocento', serif;
 }
 .bold{
     font-weight: bold;
@@ -58,4 +63,9 @@ h1{
 a {
     color: black;
     font-weight: bold;
-}
+} 
+@media (min-width:641px) {
+    h1 {
+        font-size: 72px;
+    }
+} 

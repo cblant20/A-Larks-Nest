@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    //this doesn't trigger when I navigate to home from any other page
 
     activeGallery = "#portrait-container";
     $("#pet-container").addClass("cS-hidden");
@@ -28,6 +29,15 @@ $(document).ready(function() {
         activeGallery= "#event-container";
     });
 
+/*
+set the following based on device screen size to fix up your gallery
+vertical    boolean false   change slide's direction from horizontal to Vertical
+verticalHeight  number  500 set height of slider if vertical mode is active and item more than 1
+vThumbWidth
+how to handle landscape images on mobile and portrait on desktop
+use $(window).width to determine gallery setup. Dry these functions out.
+
+*/
     $('#pets-image-gallery').lightSlider({
         //gallery:true,
         item:1,
